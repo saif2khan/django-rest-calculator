@@ -1,1 +1,1 @@
-web: gunicorn calculator.wsgi --log-file -
+web: python calculator/manage.py runserver 0.0.0.0:$PORT
