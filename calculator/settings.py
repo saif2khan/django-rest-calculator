@@ -25,7 +25,7 @@ SECRET_KEY = 'mp$uvjd(6fj+g$#8$_@0clwd6!zl4shdvavkohs^w^(4w4!*x#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['agile-reaches-78709.herokuapp.com','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['sk-calculator.herokuapp.com','localhost','127.0.0.1']
 
 
 # Application definition
