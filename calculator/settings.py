@@ -25,7 +25,7 @@ SECRET_KEY = 'mp$uvjd(6fj+g$#8$_@0clwd6!zl4shdvavkohs^w^(4w4!*x#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sk-calculator.herokuapp.com','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['sk-calculator.herokuapp.com','localhost','127.0.0.1','localhost:8888']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'addition',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'calculator.urls'
@@ -120,3 +122,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CORS_ORIGIN_WHITELIST = 'localhost:8888',
